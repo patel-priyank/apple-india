@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,45 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
 }
+
+.max-width {
+  width: 980px;
+}
+
+/* #region navbar */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.nav-items > :not(.icon) {
+  font-size: 0.75rem;
+}
+
+.nav-items a {
+  color: #d4d4d4;
+  transition: color 0.3s linear;
+}
+
+.nav-items a:hover {
+  color: white;
+}
+
+/* #endregion */
