@@ -193,3 +193,66 @@ html {
 }
 
 /* #endregion */
+
+/* #region shop education */
+
+.shop-education {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: var(--content-height);
+}
+
+.shop-education .banner-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
+.shop-education .text {
+  position: absolute;
+  color: white;
+  top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-education h2 {
+  font-size: 3.5rem;
+  font-style: italic;
+  color: black;
+}
+
+.shop-education .supercharged {
+  color: #ca2166;
+}
+
+.shop-education h3 {
+  font-size: 1.75rem;
+  color: black;
+  font-weight: normal;
+}
+
+.shop-education .cta-buttons {
+  display: flex;
+  margin-top: 1rem;
+  z-index: 10;
+}
+
+.shop-education .cta-buttons a {
+  display: inline-block;
+  color: #06c;
+  font-size: 1.25rem;
+  margin: 0 1.25rem;
+}
+
+.shop-education .cta-buttons a:hover:not(.fas) {
+  text-decoration: underline;
+}
+
+/* #endregion */
