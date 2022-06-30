@@ -134,3 +134,62 @@ html {
 }
 
 /* #endregion */
+
+/* #region macbook air */
+
+.macbook-air {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: var(--content-height);
+}
+
+.macbook-air .banner-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
+.macbook-air .text {
+  position: absolute;
+  color: white;
+  left: 20%;
+  margin-left: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.macbook-air h2 {
+  color: black;
+  font-size: 3.5rem;
+}
+
+.macbook-air .availability {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #86868b;
+}
+
+.macbook-air .cta-buttons {
+  display: flex;
+  margin-top: 1rem;
+  z-index: 10;
+}
+
+.macbook-air .cta-buttons a {
+  display: inline-block;
+  color: #06c;
+  font-size: 1.25rem;
+  margin: 0 1.25rem;
+}
+
+.macbook-air .cta-buttons a:hover:not(.fas) {
+  text-decoration: underline;
+}
+
+/* #endregion */
