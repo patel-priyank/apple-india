@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+  --content-height: 692px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +18,23 @@ html {
 
 .max-width {
   width: 980px;
+}
+
+.fa-angle-right {
+  font-size: 75%;
+  margin-left: 0.25rem;
+}
+
+.promo-ribbon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+}
+
+.promo-ribbon a:hover:not(.fas) {
+  text-decoration: underline;
 }
 
 /* #region navbar */
@@ -48,6 +69,68 @@ html {
 
 .nav-items a:hover {
   color: white;
+}
+
+/* #endregion */
+
+/* #region macbook pro */
+
+.macbook-pro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: var(--content-height);
+}
+
+.macbook-pro .banner-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
+.macbook-pro .text {
+  position: absolute;
+  color: white;
+  top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.macbook-pro h2 {
+  font-size: 3.5rem;
+}
+
+.macbook-pro .supercharged-by-m2 {
+  margin-left: 2.75rem;
+}
+
+.macbook-pro .cta-buttons {
+  display: flex;
+  margin-top: 1rem;
+  z-index: 10;
+}
+
+.macbook-pro .cta-buttons a {
+  display: inline-block;
+  color: #2997ff;
+  font-size: 1.25rem;
+}
+
+.macbook-pro .cta-buttons a:nth-child(2n - 1) {
+  margin-right: 1.25rem;
+}
+
+.macbook-pro .cta-buttons a:nth-child(2n) {
+  margin-left: 1.25rem;
+}
+
+.macbook-pro .cta-buttons a:hover:not(.fas) {
+  text-decoration: underline;
 }
 
 /* #endregion */
